@@ -33,13 +33,13 @@ public class PlaceController {
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
 	public String addContact(@ModelAttribute("place") Place place,
 			BindingResult result) {
-		contactService.addContact(place);
+		contactService.addPlace(place);
 		return "redirect:/index";
 	}
 
 	@RequestMapping("/delete/{contactId}")
 	public String deleteContact(@PathVariable("placeId") Integer placeId) {
-		contactService.removeContact(placeId);
+		contactService.removePlace(placeId);
 		return "redirect:/index";
 	}
 }
