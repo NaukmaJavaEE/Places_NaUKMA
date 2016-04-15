@@ -8,7 +8,7 @@ public interface PlaceDAO {
 	
 	void addPlace(Place place);
 	
-	void deletePlace(Integer pid);
+	void removePlace(Integer pid);
 	
 	public List<Place> listPlaces();
 

@@ -18,7 +18,7 @@ public class PlaceDAOImpl implements PlaceDAO {
 	}
 
 	//
-	public void deletePlace(Integer pid) {
+	public void removePlace(Integer pid) {
 		// Place place = (Place)
 		// sessionFactory.getCurrentSession().load(Place.class, pid);
 		// if (null != place) {
