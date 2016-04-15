@@ -68,7 +68,7 @@
 	<h3>
 		<spring:message code="label.places" />
 	</h3>
-	<c:if test="${!empty contactList}">
+	<c:if test="${!empty placeList}">
 		<table class="data">
 			<tr>
 				<th><spring:message code="label.type" /></th>
@@ -79,7 +79,7 @@
 				<th><spring:message code="label.info" /></th>
 				<th>&nbsp;</th>
 			</tr>
-			<c:forEach items="${placeList}" var="contact">
+			<c:forEach items="${placeList}" var="place">
 				<tr>
 				<td>${place.type}</td>
 				<td>${place.name}</td>
