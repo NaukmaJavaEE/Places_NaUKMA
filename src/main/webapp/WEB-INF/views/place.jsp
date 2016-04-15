@@ -6,37 +6,92 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf8">
-	<title><spring:message code="label.title" /></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<title><spring:message code="label.title" /></title>
 </head>
 <body>
 
-<a href="<c:url value="/logout" />">
-	<spring:message code="label.logout" />
-</a>
-  
-<h2><spring:message code="label.title" /></h2>
+	<a href="<c:url value="/logout" />"> <spring:message
+			code="label.logout" />
+	</a>
 
-<form:form method="post" action="add" commandName="place">
+	<h2>
+		<spring:message code="label.title" />
+	</h2>
 
-	<table>
-		
-	</table>
-</form:form>
+	<form:form method="post" action="add" commandName="place">
 
-<h3><spring:message code="label.places" /></h3>
-<c:if test="${!empty contactList}">
-	<table class="data">
-		<tr>
-			
-		</tr>
-		<c:forEach items="${contactList}" var="contact">
+		<table>
 			<tr>
-				
+				<td><form:label path="type">
+						<spring:message code="label.type" />
+					</form:label></td>
+				<td><form:input path="type" /></td>
 			</tr>
-		</c:forEach>
-	</table>
-</c:if>
+			<tr>
+				<td><form:label path="name">
+						<spring:message code="label.name" />
+					</form:label></td>
+				<td><form:input path="name" /></td>
+			</tr>
+			<tr>
+				<td><form:label path="building">
+						<spring:message code="label.building" />
+					</form:label></td>
+				<td><form:input path="building" /></td>
+			</tr>
+			<tr>
+				<td><form:label path="stage">
+						<spring:message code="label.stage" />
+					</form:label></td>
+				<td><form:input path="stage" /></td>
+			</tr>
+			<tr>
+				<td><form:label path="aud">
+						<spring:message code="label.aud" />
+					</form:label></td>
+				<td><form:input path="aud" /></td>
+			</tr>
+			<tr>
+				<td><form:label path="info">
+						<spring:message code="label.info" />
+					</form:label></td>
+				<td><form:input path="info" /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit"
+					value="<spring:message code="label.addplace"/>" /></td>
+			</tr>
+		</table>
+	</form:form>
+
+	<h3>
+		<spring:message code="label.places" />
+	</h3>
+	<c:if test="${!empty contactList}">
+		<table class="data">
+			<tr>
+				<th><spring:message code="label.type" /></th>
+				<th><spring:message code="label.name" /></th>
+				<th><spring:message code="label.building" /></th>
+				<th><spring:message code="label.stage" /></th>
+				<th><spring:message code="label.aud" /></th>
+				<th><spring:message code="label.info" /></th>
+				<th>&nbsp;</th>
+			</tr>
+			<c:forEach items="${placeList}" var="contact">
+				<tr>
+				<td>${place.type}</td>
+				<td>${place.name}</td>
+				<td>${place.building}</td>
+				<td>${place.stage}</td>
+				<td>${place.aud}</td>
+				<td>${place.info}</td>
+			<td><a href="delete/${place.id}"><spring:message code="label.delete" /></a></td>	
+				</tr>
+			</c:forEach>
+		</table>
+	</c:if>
 
 </body>
 </html>
