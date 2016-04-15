@@ -11,9 +11,9 @@ import javax.persistence.Table;
 public class Place {
 
 	@Id
-	@Column(name = "PID")
+	@Column(name = "ID")
 	@GeneratedValue
-	private Integer pid;
+	private Integer id;
 
 	@Column(name = "TYPE")
 	private String type;
@@ -33,12 +33,12 @@ public class Place {
 	@Column(name = "INFO")
 	private String info;
 
-	public Integer getPid() {
-		return pid;
+	public Integer getId() {
+		return id;
 	}
 
-	public void setPid(Integer pid) {
-		this.pid = pid;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public String getType() {

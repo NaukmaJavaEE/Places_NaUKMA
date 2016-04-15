@@ -5,6 +5,6 @@
 
 <hibernate-configuration>
 	<session-factory>
-		<mapping class="net.schastny.contactmanager.domain.Contact" />
+		<mapping class="com.javaee.naukmaplaces.domain.Place" />
 	</session-factory>
 </hibernate-configuration>

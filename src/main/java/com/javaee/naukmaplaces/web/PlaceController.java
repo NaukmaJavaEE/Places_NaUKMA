@@ -16,12 +16,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class PlaceController {
 
 	@Autowired
-	private PlaceService contactService;
+	private PlaceService placeService;
 
 	@RequestMapping("/index")
 	public String listContacts(Map<String, Object> map) {
 		map.put("place", new Place());
-		map.put("placeList", contactService.listPlace());
+		map.put("placeList", placeService.listPlace());
 		return "place";
 	}
 	
@@ -33,13 +33,13 @@ public class PlaceController {
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
 	public String addContact(@ModelAttribute("place") Place place,
 			BindingResult result) {
-		contactService.addPlace(place);
+		placeService.addPlace(place);
 		return "redirect:/index";
 	}
 
 	@RequestMapping("/delete/{contactId}")
 	public String deleteContact(@PathVariable("placeId") Integer placeId) {
-		contactService.removePlace(placeId);
+		placeService.removePlace(placeId);
 		return "redirect:/index";
 	}
 }
