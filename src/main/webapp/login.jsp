@@ -16,11 +16,10 @@
 
 <c:if test="${not empty param.error}">
 	<font color="red"> <spring:message code="label.loginerror" />
-	 </font>
+	: ${sessionScope["SPRING_SECURITY_LAST_EXCEPTION"].message} </font>
 </c:if>
 
-<form method="POST" />">
-<!-- <form method="POST" action="<c:url value="/j_spring_security_check" />"> -->
+<form method="POST" action="<c:url value="/j_spring_security_check" />">
 <table>
 	<tr>
 		<td align="right"><spring:message code="label.login" /></td>
