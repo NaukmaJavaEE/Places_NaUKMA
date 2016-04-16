@@ -7,12 +7,14 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf8">
 	<title><spring:message code="label.title" /></title>
+ 
 </head>
 <body>
 
 <a href="<c:url value="/index" />">
 	<spring:message code="label.places" />
 </a><br/>
+
 
 <c:if test="${not empty param.error}">
 	<font color="red"> <spring:message code="label.loginerror" />
@@ -39,5 +41,6 @@
 	</tr>
 </table>
 </form>
+
 </body>
 </html>

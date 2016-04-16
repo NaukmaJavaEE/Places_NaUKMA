@@ -8,28 +8,32 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf8">
 <title><spring:message code="label.title" /></title>
+
+</head>
+
 </head>
 <body>
 
-	<a href="<c:url value="/logout" />"> <spring:message
+	<a  href="<c:url value="/logout" />"> <spring:message
 			code="label.logout" />
 	</a>
 
-	<h2>
+	<h1 >
 		<spring:message code="label.title" />
-	</h2>
+	</h1>
 
+    
 	<form:form method="post" action="add" commandName="place">
 
 		<table>
 			<tr>
-				<td><form:label path="type">
+				<td><form:label path="type" >
 						<spring:message code="label.type" />
 					</form:label></td>
 				<td><form:input path="type" /></td>
 			</tr>
 			<tr>
-				<td><form:label path="name">
+				<td><form:label path="name" >
 						<spring:message code="label.name" />
 					</form:label></td>
 				<td><form:input path="name" /></td>
@@ -66,7 +70,7 @@
 	</form:form>
 
 	<h3>
-		<spring:message code="label.places" />
+		<spring:message code="label.places"/>
 	</h3>
 	<c:if test="${!empty placeList}">
 		<table class="data">
