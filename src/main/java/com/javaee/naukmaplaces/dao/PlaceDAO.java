@@ -12,4 +12,15 @@ public interface PlaceDAO {
 	
 	public List<Place> listPlaces();
 
+	public List<Place> listDekanat();
+	public List<Place> listKafedra();
+	public List<Place> listLibrary();
+	public List<Place> listAdmin();
+	public List<Place> listHealth();
+	public List<Place> listSchool();
+	public List<Place> listStudOrg();
+	public List<Place> listMoney();
+	public List<Place> listFriendOrg();
+	
+
 }

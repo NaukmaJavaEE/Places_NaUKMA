@@ -17,28 +17,40 @@ public class PlaceController {
 
 	@Autowired
 	private PlaceService placeService;
+	//
+	// @RequestMapping("/index")
+	// public String listPlaces(Map<String, Object> map) {
+	// map.put("place", new Place());
+	// map.put("placeList", placeService.listPlace());
+	// return "place";
+	// }
 
 	@RequestMapping("/index")
-	public String listContacts(Map<String, Object> map) {
+	public String listDekanat(Map<String, Object> map) {
 		map.put("place", new Place());
-		map.put("placeList", placeService.listPlace());
+		map.put("dekanatList", placeService.listDekanat());
 		return "place";
 	}
-	
+
+	/*
+	 * @RequestMapping("/index") public String listKafedra(Map<String, Object>
+	 * map) { map.put("place", new Place()); map.put("kafedraList",
+	 * placeService.listKafedra()); return "place"; }
+	 */
+
 	@RequestMapping("/")
 	public String home() {
 		return "redirect:/index";
 	}
 
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
-	public String addContact(@ModelAttribute("place") Place place,
-			BindingResult result) {
+	public String addPlace(@ModelAttribute("place") Place place, BindingResult result) {
 		placeService.addPlace(place);
 		return "redirect:/index";
 	}
 
-	@RequestMapping("/delete/{contactId}")
-	public String deleteContact(@PathVariable("placeId") Integer placeId) {
+	@RequestMapping("/delete/{placeId}")
+	public String deletePlace(@PathVariable("placeId") Integer placeId) {
 		placeService.removePlace(placeId);
 		return "redirect:/index";
 	}

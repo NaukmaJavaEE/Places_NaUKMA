@@ -7,7 +7,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf8">
 	<title><spring:message code="label.title" /></title>
- 
+	<link href="/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="/resources/css/main_page.css">
 </head>
 <body>
 

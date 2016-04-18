@@ -28,4 +28,14 @@ public class PlaceServiceImpl implements PlaceService {
 		placeDAO.removePlace(id);
 	}
 
+	@Transactional
+	public List<Place> listDekanat() {
+		return placeDAO.listDekanat();
+	}
+
+	@Transactional
+	public List<Place> listKafedra() {		
+		return placeDAO.listKafedra();
+	}
+
 }
