@@ -153,60 +153,62 @@
 						</h2>
 						<div class="cleaner_h10"></div>
 					</div>
+
 					<div class="panel" id="addnew">
 						<h2>
 							<spring:message code="label.addnew" />
 						</h2>
 						<div class="cleaner_h10"></div>
-						<div id="contact_form">
-							<form:form method="post" action="add" commandName="place">
+						<div class="col_370 float_l">
+							<div id="contact_form">
+								<form:form method="post" action="add" commandName="place">
 
-								<table>
-									<tr>
-										<td><form:label path="type">
-												<spring:message code="label.type" />
-											</form:label></td>
-										<td><form:input path="type" /></td>
-									</tr>
-									<tr>
-										<td><form:label path="name">
-												<spring:message code="label.name" />
-											</form:label></td>
-										<td><form:input path="name" /></td>
-									</tr>
-									<tr>
-										<td><form:label path="building">
-												<spring:message code="label.building" />
-											</form:label></td>
-										<td><form:input path="building" /></td>
-									</tr>
-									<tr>
-										<td><form:label path="stage">
-												<spring:message code="label.stage" />
-											</form:label></td>
-										<td><form:input path="stage" /></td>
-									</tr>
-									<tr>
-										<td><form:label path="aud">
-												<spring:message code="label.aud" />
-											</form:label></td>
-										<td><form:input path="aud" /></td>
-									</tr>
-									<tr>
-										<td><form:label path="info">
-												<spring:message code="label.info" />
-											</form:label></td>
-										<td><form:input path="info" /></td>
-									</tr>
-								</table>
-								<input type="submit"
-									value="<spring:message code="label.addplace"/>"
-									class="submit_btn float_l" />
-							</form:form>
-							<div class="cleaner"></div>
+									<table>
+										<tr>
+											<td><form:label path="type">
+													<spring:message code="label.type" />
+												</form:label></td>
+											<td><form:input path="type" /></td>
+										</tr>
+										<tr>
+											<td><form:label path="name">
+													<spring:message code="label.name" />
+												</form:label></td>
+											<td><form:input path="name" /></td>
+										</tr>
+										<tr>
+											<td><form:label path="building">
+													<spring:message code="label.building" />
+												</form:label></td>
+											<td><form:input path="building" /></td>
+										</tr>
+										<tr>
+											<td><form:label path="stage">
+													<spring:message code="label.stage" />
+												</form:label></td>
+											<td><form:input path="stage" /></td>
+										</tr>
+										<tr>
+											<td><form:label path="aud">
+													<spring:message code="label.aud" />
+												</form:label></td>
+											<td><form:input path="aud" /></td>
+										</tr>
+										<tr>
+											<td><form:label path="info">
+													<spring:message code="label.info" />
+												</form:label></td>
+											<td><form:input path="info" /></td>
+										</tr>
+									</table>
+									<input type="submit"
+										value="<spring:message code="label.addplace"/>"
+										class="submit_btn float_l" />
+								</form:form>
+							</div>
 						</div>
 						<div class="cleaner"></div>
-					</div>
+					</div>				
 
 					<div class="panel" id="contactus">
 						<h2>
