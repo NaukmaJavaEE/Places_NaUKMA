@@ -20,7 +20,56 @@
 	charset="utf-8"></script>
 <script src="resources/js/jquery.easing.1.3.js" type="text/javascript"
 	charset="utf-8"></script>
-
+<script>
+	$(document).ready(function(){
+		$('#show-dekenat-list').click(function(){
+			$('#dekanat .float_i').html(formTableHeader());
+			
+			$.ajax({
+				url: '/Places_NaUKMA/faculty/',
+				type: 'GET',
+				beforeSend: function(xhr){
+					xhr.setRequestHeader('Content-type', 'applications/json');
+				},
+				success: function(response){
+					for(var i = 0; i < response.length; ++i){
+						$('#list-decanat').append(formDekanat(response[i]));
+					}
+				},
+				error: function(xhr){
+					console.log(xhr);
+				}
+			});	
+		});
+		
+		
+		
+		
+	});
+	
+	function formTableHeader(){
+		return '<table>'+
+		'<thead>'+
+		'<tr>'+
+			'<th><spring:message code="label.name" /></th>'+
+			'<th><spring:message code="label.building" /></th>'+
+			'<th><spring:message code="label.aud" /></th>'+
+			'<th><spring:message code="label.info" /></th>'+
+			'<th>&nbsp;</th>'+
+		'</tr>'+
+		'</thead>'+
+		'<tbody id="list-decanat"></tbody>'+
+	'</table>';
+	}
+	
+	function formDekanat(place){
+		return '<td><td align="center">'+place.name+'</td>'+
+		'<td align="center">'+place.building+'</td>'+
+		'<td align="center">'+place.aud+'</td>'+
+		'<td align="center">'+place.info+'</td>'
+		'<td><a href="delete/'+place.id+'"><spring:message code="label.delete" /></a></td></tr>';
+	}
+</script>
 <style>
 @import url("resources/css/templatemo_style.css");
 
@@ -51,26 +100,6 @@
 								<spring:message code="label.dekanat" />
 							</h2>
 							<div class="float_i">
-								<c:if test="${!empty dekanatList}">
-									<table>
-										<tr>
-											<th><spring:message code="label.name" /></th>
-											<th><spring:message code="label.building" /></th>
-											<th><spring:message code="label.aud" /></th>
-											<th><spring:message code="label.info" /></th>
-											<th>&nbsp;</th>
-										</tr>
-										<c:forEach items="${dekanatList}" var="place">
-											<td align="center">${place.name}</td>
-											<td align="center">${place.building}</td>
-											<td align="center">${place.aud}</td>
-											<td align="center">${place.info}</td>
-											<td><a href="delete/${place.id}"><spring:message
-														code="label.delete" /></a></td>
-											</tr>
-										</c:forEach>
-									</table>
-								</c:if>
 							</div>
 						</div>
 						<!-- end  -->
@@ -269,7 +298,7 @@
 			<div id="templatemo_sidebar">
 				<div id="menu">
 					<ul class="navigation">
-						<li><a href="#dekanat" class="selected"><spring:message
+						<li><a href="#dekanat" id="show-dekanat-list" class="selected"><spring:message
 									code="label.dekanat" /></a></li>
 						<li><a href="#kafedra"><spring:message
 									code="label.kafedra" /></a></li>

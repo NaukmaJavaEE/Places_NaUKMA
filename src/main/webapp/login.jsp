@@ -1,6 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=utf8"
 	pageEncoding="utf8"%>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -9,30 +13,6 @@
 <title><spring:message code="label.title" /></title>
 <link href="/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/resources/css/main_page.css">
-</head>
-<body>
-
-	<a href="<c:url value="/index" />"> <spring:message
-			code="label.places" />
-	</a>
-	<br />
-
-
-
-
-</body>
-</html>
-
-
-<%@ page language="java" contentType="text/html; charset=utf8"
-	pageEncoding="utf8"%>
-<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><spring:message code="label.title" /></title>
 <script src="resources/js/jquery-1.2.6.js" type="text/javascript"></script>
