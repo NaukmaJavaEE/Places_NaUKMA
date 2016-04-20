@@ -14,13 +14,23 @@ public class PlaceServiceImpl implements PlaceService {
 	private PlaceDAO placeDAO;
 
 	@Transactional
-	public void addPlace(Place place) {
-		placeDAO.addPlace(place);
+	public void addNewPlace(Place place) {
+		placeDAO.addNewPlace(place);
+	}
+	
+	@Transactional
+	public void addApprovedPlace(Place place){
+		placeDAO.addApprovedPlace(place);
 	}
 
 	@Transactional
-	public List<Place> listPlace() {
-		return placeDAO.listPlaces();
+	public List<Place> listAllPlaces() {
+		return placeDAO.listAllPlaces();
+	}
+
+	@Transactional
+	public List<Place> listNewPlaces() {
+		return placeDAO.listNewPlaces();
 	}
 
 	@Transactional
@@ -29,13 +39,57 @@ public class PlaceServiceImpl implements PlaceService {
 	}
 
 	@Transactional
-	public List<Place> listDekanat() {
-		return placeDAO.listDekanat();
+	public List<Place> listDean() {
+		return placeDAO.listDean();
 	}
 
 	@Transactional
-	public List<Place> listKafedra() {		
-		return placeDAO.listKafedra();
+	public List<Place> listChair() {
+		return placeDAO.listChair();
+	}
+
+	@Transactional
+	public List<Place> listAdministration() {
+		return placeDAO.listAdministration();
+	}
+
+	@Transactional
+	public List<Place> listDepartments() {
+		return placeDAO.listDepartments();	}
+
+	@Transactional
+	public List<Place> listLibrary() {
+		return placeDAO.listLibrary();
+	}
+
+	@Transactional
+	public List<Place> listOrganizations() {
+		return placeDAO.listOrganizations();
+	}
+
+	@Transactional
+	public List<Place> listCoworking() {
+		return placeDAO.listCoworking();
+	}
+
+	@Transactional
+	public List<Place> listFriends() {
+		return placeDAO.listFriends();
+	}
+
+	@Transactional
+	public List<Place> listSchools() {
+		return placeDAO.listSchools();
+	}
+
+	@Transactional
+	public List<Place> listHealth() {
+		return placeDAO.listHealth();
+	}
+
+	@Transactional
+	public List<Place> listServices() {
+		return placeDAO.listServices();
 	}
 
 }

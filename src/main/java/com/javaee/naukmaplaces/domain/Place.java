@@ -2,6 +2,8 @@ package com.javaee.naukmaplaces.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -32,6 +34,10 @@ public class Place {
 
 	@Column(name = "INFO")
 	private String info;
+	
+	@Column(name = "STATUS")
+	@Enumerated(EnumType.STRING)
+	private PlaceStatus status;
 
 	public Integer getId() {
 		return id;
@@ -89,4 +95,12 @@ public class Place {
 		this.info = info;
 	}
 
+	public PlaceStatus getStatus() {
+		return status;
+	}
+
+	public void setStatus(PlaceStatus status) {
+		this.status = status;
+	}
+	
 }

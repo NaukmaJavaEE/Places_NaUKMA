@@ -58,9 +58,7 @@
 
 .scroll {
 	width: 745px;
-	height: 490px;
-	overflow: auto;
-	/* overflow-x: hidden; */
+	height: 490px;	
 	position: relative;
 	clear: left;
 }
@@ -68,7 +66,7 @@
 .scrollContainer div.panel {
 	width: 745px;
 	height: 490px;
-	overflow: hidden;
+	overflow-y: auto;
 }
 
 ul.navigation {
