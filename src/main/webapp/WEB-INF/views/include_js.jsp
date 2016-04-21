@@ -15,7 +15,7 @@
 			}, function(xhr) {
 				console.log(xhr);
 			});
-		});
+		}).trigger('click');
 
 		$('#show-chair-list').click(function() {
 			$('#chair .float_i').html(formTHChair());
