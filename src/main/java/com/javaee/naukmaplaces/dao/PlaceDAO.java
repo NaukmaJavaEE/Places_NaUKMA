@@ -7,7 +7,7 @@ import com.javaee.naukmaplaces.domain.*;
 public interface PlaceDAO {
 	
 	void addNewPlace(Place place);	
-	void addApprovedPlace(Place place);
+	void addApprovedPlace(int id);
 	void removePlace(Integer pid);
 	
 	public List<Place> listAllPlaces();

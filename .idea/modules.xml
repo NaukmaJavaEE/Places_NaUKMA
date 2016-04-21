@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Places_NaUKMA (1).iml" filepath="$PROJECT_DIR$/Places_NaUKMA (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.javaee.naukmaplaces/Places_NaUKMA/Places_NaUKMA (2).iml" filepath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.javaee.naukmaplaces/Places_NaUKMA/Places_NaUKMA (2).iml" />
+    </modules>
+  </component>
+</project>

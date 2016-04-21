@@ -15,7 +15,7 @@
 			}, function(xhr) {
 				console.log(xhr);
 			});
-		});
+		}).trigger('click');
 
 		$('#show-all-list').click(function() {
 			$('#allplaces .float_i').html(formTableHeaderAll());
@@ -38,7 +38,9 @@
 				+ '<th><spring:message code="label.aud" /></th>'
 				+ '<th><spring:message code="label.info" /></th>'
 				+ '<th><spring:message code="label.status" /></th>'
-				+ '<th>&nbsp;</th>' + '</tr>' + '</thead>'
+				+ '<th>&nbsp;</th>'
+				+ '<th>&nbsp;</th>'
+				+ '</tr>' + '</thead>'
 				+ '<tbody id="list-new"></tbody>' + '</table>';
 	}
 	function formTableHeaderAll() {
@@ -49,7 +51,9 @@
 				+ '<th><spring:message code="label.aud" /></th>'
 				+ '<th><spring:message code="label.info" /></th>'
 				+ '<th><spring:message code="label.status" /></th>'
-				+ '<th>&nbsp;</th>' + '</tr>' + '</thead>'
+				+ '<th>&nbsp;</th>'
+				+ '<th>&nbsp;</th>'
+				+ '</tr>' + '</thead>'
 				+ '<tbody id="list-all"></tbody>' + '</table>';
 	}
 	function formTableBody(place) {
@@ -58,13 +62,14 @@
 				+ '<td align="center">' + place.stage + '</td>'
 				+ '<td align="center">' + place.aud + '</td>'
 				+ '<td align="center">' + place.info + '</td>'
-				+ '<td align="center">' + place.status + '</td>';
-		'<td><a href="delete/'+place.id+'"><spring:message code="label.delete" /></a></td></tr>';
+				+ '<td align="center">' + place.status + '</td>'+
+		'<td><a href="delete/'+place.id+'"><spring:message code="label.delete" /></a></td></tr>'
+				+ '<td><form action="/admin/add" method="post"><input type="hidden" name="id" value="'+place.id+'" /><button>Approve</button></form></td></tr>';
 	}
 
 	function get(url, success, error) {
 		$.ajax({
-			url : '/Places_NaUKMA' + url,
+			url : url,
 			type : 'GET',
 			dataType : 'json',
 			success : success,

@@ -257,7 +257,7 @@
 	
 	function get(url, success, error) {
 		$.ajax({
-			url : '/Places_NaUKMA' + url,
+			url : url,
 			type : 'GET',
 			dataType : 'json',
 			success : success,

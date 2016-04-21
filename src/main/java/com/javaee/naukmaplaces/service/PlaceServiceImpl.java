@@ -19,8 +19,8 @@ public class PlaceServiceImpl implements PlaceService {
 	}
 	
 	@Transactional
-	public void addApprovedPlace(Place place){
-		placeDAO.addApprovedPlace(place);
+	public void addApprovedPlace(int id){
+		placeDAO.addApprovedPlace(id);
 	}
 
 	@Transactional

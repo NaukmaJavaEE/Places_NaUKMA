@@ -20,9 +20,10 @@ public class PlaceDAOImpl implements PlaceDAO {
 		sessionFactory.getCurrentSession().save(place);
 	}
 
-	public void addApprovedPlace(Place place) {
-		place.setStatus(PlaceStatus.APPROVED);
-		sessionFactory.getCurrentSession().save(place);
+	public void addApprovedPlace(int id) {
+		Query query = sessionFactory.getCurrentSession().createQuery("UPDATE Place p SET p.status = 'APPROVED' WHERE p.id = :id");
+		query.setParameter("id", id);
+		query.executeUpdate();
 	}
 	
 	public void removePlace(Integer id) {

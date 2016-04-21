@@ -5,7 +5,7 @@ import com.javaee.naukmaplaces.domain.Place;
 
 public interface PlaceService {
 	public void addNewPlace(Place place);
-	void addApprovedPlace(Place place);
+	void addApprovedPlace(int id);
 	public void removePlace(Integer id);
 
 	public List<Place> listAllPlaces();
