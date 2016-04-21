@@ -127,7 +127,34 @@
 				console.log(xhr);
 			});
 		});
+		$('#form').submit(function(e){
+			e.preventDefault();
+			var body = {};
+			$(this).find('input').each(function(i, current){
+				current = $(current);
+				body[current.attr('name')] = current.attr('value');
+			});
 
+			body.text = $(this).find('textarea').val();
+
+			$.ajax({
+				url: '/mail',
+				type: 'POST',
+				contentType: "application/json; charset=utf-8",
+				data: JSON.stringify(body),
+				/*beforeSend: function(xhr){
+					xhr.setRequestHeader('Content-type', 'application/json');
+					xhr.setRequestHeader('Accept', 'application/json');
+				},*/
+				success: function(response){
+					console.log(response);
+				},
+				error: function(xhr){
+					console.log(xhr);
+				}
+			})
+
+		});
 	});
 
 	function formTHDean() {
