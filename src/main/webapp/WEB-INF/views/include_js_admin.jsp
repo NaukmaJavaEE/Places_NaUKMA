@@ -10,7 +10,7 @@
 			$('#newplaces .float_i').html(formTableHeaderNew());
 			get('/admin/newplaces', function(response) {
 				for (var i = 0; i < response.length; ++i) {
-					$('#list-new').append(formTableBody(response[i]));
+					$('#list-new').append(formTableBodyNew(response[i]));
 				}
 			}, function(xhr) {
 				console.log(xhr);
@@ -21,7 +21,7 @@
 			$('#allplaces .float_i').html(formTableHeaderAll());
 			get('/admin/allplaces', function(response) {
 				for (var i = 0; i < response.length; ++i) {
-					$('#list-all').append(formTableBody(response[i]));
+					$('#list-all').append(formTableBodyAll(response[i]));
 				}
 			}, function(xhr) {
 				console.log(xhr);
@@ -56,7 +56,7 @@
 				+ '</tr>' + '</thead>'
 				+ '<tbody id="list-all"></tbody>' + '</table>';
 	}
-	function formTableBody(place) {
+	function formTableBodyNew(place) {
 		return '<tr><td align="center">' + place.name + '</td>'
 				+ '<td align="center">' + place.building + '</td>'
 				+ '<td align="center">' + place.stage + '</td>'
@@ -64,7 +64,16 @@
 				+ '<td align="center">' + place.info + '</td>'
 				+ '<td align="center">' + place.status + '</td>'+
 		'<td><a href="delete/'+place.id+'"><spring:message code="label.delete" /></a></td></tr>'
-				+ '<td><form action="/admin/add" method="post"><input type="hidden" name="id" value="'+place.id+'" /><button>Approve</button></form></td></tr>';
+				+ '<td><form action="/admin/add" method="post"><input type="hidden" name="id" value="'+place.id+'" /><button><spring:message code="label.add"/></button></form></td></tr>';
+	}
+	function formTableBodyAll(place) {
+		return '<tr><td align="center">' + place.name + '</td>'
+				+ '<td align="center">' + place.building + '</td>'
+				+ '<td align="center">' + place.stage + '</td>'
+				+ '<td align="center">' + place.aud + '</td>'
+				+ '<td align="center">' + place.info + '</td>'
+				+ '<td align="center">' + place.status + '</td>'+
+				'<td><a href="delete/'+place.id+'"><spring:message code="label.delete" /></a></td></tr>';
 	}
 
 	function get(url, success, error) {
