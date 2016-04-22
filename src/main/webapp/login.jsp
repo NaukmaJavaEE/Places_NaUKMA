@@ -15,22 +15,22 @@
 <link rel="stylesheet" href="/resources/css/main_page.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><spring:message code="label.title" /></title>
-<script src="../../resources/js/jquery-1.2.6.js" type="text/javascript"></script>
-<script src="../../resources/js/jquery.scrollTo-1.3.3.js"
+<script src="resources/js/jquery-1.2.6.js" type="text/javascript"></script>
+<script src="resources/js/jquery.scrollTo-1.3.3.js"
 	type="text/javascript"></script>
-<script src="../../resources/js/jquery.localscroll-1.2.5.js"
+<script src="resources/js/jquery.localscroll-1.2.5.js"
 	type="text/javascript" charset="utf-8"></script>
-<script src="../../resources/js/jquery.serialScroll-1.2.1.js"
+<script src="resources/js/jquery.serialScroll-1.2.1.js"
 	type="text/javascript" charset="utf-8"></script>
-<script src="../../resources/js/coda-slider.js" type="text/javascript"
+<script src="resources/js/coda-slider.js" type="text/javascript"
 		charset="utf-8"></script>
-<script src="../../resources/js/jquery.easing.1.3.js" type="text/javascript"
+<script src="resources/js/jquery.easing.1.3.js" type="text/javascript"
 		charset="utf-8"></script>
 
 <style>
-@import url("../../resources/css/templatemo_style.css");
+@import url("resources/css/templatemo_style.css");
 
-@import url("../../resources/css/coda-slider.css");
+@import url("resources/css/coda-slider.css");
 </style>
 
 </head>
