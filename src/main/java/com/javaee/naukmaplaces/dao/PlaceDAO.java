@@ -8,6 +8,7 @@ public interface PlaceDAO {
 	
 	void addNewPlace(Place place);	
 	void addApprovedPlace(int id);
+	void addApprovedPlace(Place place);
 	void removePlace(Integer pid);
 	
 	public List<Place> listAllPlaces();

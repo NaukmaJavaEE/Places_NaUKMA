@@ -33,9 +33,15 @@ public class AdminController {
 		return placeService.listNewPlaces();
 	}
 
-	@RequestMapping(value = "/add", method = RequestMethod.POST)
+	@RequestMapping(value = "/approve", method = RequestMethod.POST)
 	public String addPlace(@RequestParam("id") int id) {
 		placeService.addApprovedPlace(id);
+		return "redirect:/admin/";
+	}
+
+	@RequestMapping(value = "/add", method = RequestMethod.POST)
+	public String addPlace(@ModelAttribute("place") Place place, BindingResult result) {
+		placeService.addApprovedPlace(place);
 		return "redirect:/admin/";
 	}
 

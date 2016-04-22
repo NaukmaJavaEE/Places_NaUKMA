@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=utf8"
-	pageEncoding="utf8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -49,7 +49,7 @@
 				+ '<th><spring:message code="label.building" /></th>'
 				+ '<th><spring:message code="label.stage" /></th>'
 				+ '<th><spring:message code="label.aud" /></th>'
-				+ '<th><spring:message code="label.info" /></th>'
+				+ '<th style="width: 100px"><spring:message code="label.info" /></th>'
 				+ '<th><spring:message code="label.status" /></th>'
 				+ '<th>&nbsp;</th>'
 				+ '<th>&nbsp;</th>'
@@ -64,16 +64,17 @@
 				+ '<td align="center">' + place.info + '</td>'
 				+ '<td align="center">' + place.status + '</td>'+
 		'<td><a href="delete/'+place.id+'"><spring:message code="label.delete" /></a></td></tr>'
-				+ '<td><form action="/admin/add" method="post"><input type="hidden" name="id" value="'+place.id+'" /><button><spring:message code="label.add"/></button></form></td></tr>';
+				+ '<td><form action="/admin/approve" method="post"><input type="hidden" name="id" value="'+place.id+'" />' +
+				'<button><spring:message code="label.add"/></button></form></td></tr>';
 	}
 	function formTableBodyAll(place) {
 		return '<tr><td align="center">' + place.name + '</td>'
 				+ '<td align="center">' + place.building + '</td>'
 				+ '<td align="center">' + place.stage + '</td>'
 				+ '<td align="center">' + place.aud + '</td>'
-				+ '<td align="center">' + place.info + '</td>'
-				+ '<td align="center">' + place.status + '</td>'+
-				'<td><a href="delete/'+place.id+'"><spring:message code="label.delete" /></a></td></tr>';
+				+ '<td align="center" style="width: 100px">' + place.info + '</td>'
+				+ '<td align="center">' + place.status + '</td></tr>'+
+		'<td><a href="delete/'+place.id+'"><spring:message code="label.delete" /></a></td></tr>';
 	}
 
 	function get(url, success, error) {

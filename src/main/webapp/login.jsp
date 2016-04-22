@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=utf8"
-	pageEncoding="utf8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
@@ -9,11 +9,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
-<title><spring:message code="label.title" /></title>
-<link href="/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="/resources/css/main_page.css">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title><spring:message code="label.title" /></title>
 <script src="resources/js/jquery-1.2.6.js" type="text/javascript"></script>
 <script src="resources/js/jquery.scrollTo-1.3.3.js"
@@ -65,17 +61,17 @@
 									action="<c:url value="/j_spring_security_check" />">
 									<table>
 										<tr>
-											<td align="right"><spring:message code="label.login" /></td>
+											<td ><spring:message code="label.login" /></td>
 											<td><input type="text" name="j_username"
 												class="required input_field" /></td>
 										</tr>
 										<tr>
-											<td align="right"><spring:message code="label.password" /></td>
+											<td ><spring:message code="label.password" /></td>
 											<td><input type="password" name="j_password"
 												class="required input_field" /></td>
 										</tr>
 										<tr>
-											<td align="right"><spring:message code="label.remember" /></td>
+											<td ><spring:message code="label.remember" /></td>
 											<td><input type="checkbox"
 												name="_spring_security_remember_me" /></td>
 										</tr>

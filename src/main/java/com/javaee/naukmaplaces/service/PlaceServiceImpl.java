@@ -39,6 +39,11 @@ public class PlaceServiceImpl implements PlaceService {
 	}
 
 	@Transactional
+	public void addApprovedPlace(Place place) {
+		placeDAO.addApprovedPlace(place);
+	}
+
+	@Transactional
 	public List<Place> listDean() {
 		return placeDAO.listDean();
 	}
