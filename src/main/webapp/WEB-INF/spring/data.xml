@@ -28,8 +28,8 @@
 
 	<bean id="localeResolver"
 		  class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
-		<property name="defaultLocale" value="ru"/>
-		<property name="cookieName" value="nextBookLocaleCookie"/>
+		<property name="defaultLocale" value="uk"/>
+		<property name="cookieName" value="LocaleCookie"/>
 		<property name="cookieMaxAge" value="3600"/>
 	</bean>
 
