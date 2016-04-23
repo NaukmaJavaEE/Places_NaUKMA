@@ -33,11 +33,11 @@ public class AdminController {
 		return placeService.listNewPlaces();
 	}
 
-	@RequestMapping(value = "/approve", method = RequestMethod.POST)
-	public String addPlace(@RequestParam("id") int id) {
-		placeService.addApprovedPlace(id);
-		return "redirect:/admin/";
-	}
+//	@RequestMapping(value = "/approve", method = RequestMethod.POST)
+//	public String addPlace(@RequestParam("id") int id) {
+//		placeService.addApprovedPlace(id);
+//		return "redirect:/admin/";
+//	}
 
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
 	public String addPlace(@ModelAttribute("place") Place place, BindingResult result) {
@@ -48,6 +48,12 @@ public class AdminController {
 	@RequestMapping("/delete/{placeId}")
 	public String deletePlace(@PathVariable("placeId") Integer placeId) {
 		placeService.removePlace(placeId);
+		return "redirect:/admin/";
+	}
+
+	@RequestMapping("/approve/{placeId}")
+	public String approvePlace(@PathVariable("placeId") Integer placeId) {
+		placeService.addApprovedPlace(placeId);
 		return "redirect:/admin/";
 	}
 

@@ -45,14 +45,14 @@
 				<div class="scroll">
 					<div class="scrollContainer">
 
-						<div class="panel" id="newplaces">
+						<div class="panel" id="newplaces" align="center">
 							<h2>
 								<spring:message code="label.newplaces" />
 							</h2>
 							<div class="float_i"></div>
 						</div>
 						<!-- end  -->
-						<div class="panel" id="allplaces">
+						<div class="panel" id="allplaces" align="center">
 							<h2>
 								<spring:message code="label.allplaces" />
 							</h2>
