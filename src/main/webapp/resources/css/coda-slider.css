@@ -39,8 +39,8 @@
 #templatemo_content {
 	float: left;
 	width: 630px;
-	height: 490px;
-	padding: 40px 20px;
+	height: 530px;
+	padding: 30px 20px;
 }
 
 #templatemo_sidebar {
@@ -58,17 +58,30 @@
 
 .scroll {
 	width: 745px;
-	height: 490px;
+	height: 530px;
 	position: relative;
 	clear: left;
 }
 
 .scrollContainer div.panel {
 	width: 745px;
-	height: 490px;
+	height: 530px;
+	overflow: hidden;
+}
+
+.scrollContainer div.panel div.list {
+	width: 745px;
+	height: 350px;
 	overflow: hidden;
 	overflow-y: auto;
 }
+
+.scrollContainer div.panel div.gallery {
+	width: 745px;
+	height: 130px;
+	position: absolute;
+}
+
 
 ul.navigation {
 	list-style: none;

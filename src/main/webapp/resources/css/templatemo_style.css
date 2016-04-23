@@ -43,7 +43,7 @@ h2 {
 	font-size: 28px;
 	font-weight: normal;
 	padding-bottom: 20px;
-	margin: 0 0 30px 0;
+	margin: 0 0 10px 0;
 	font-weight: normal;
 	background: url(../images/templatemo_divider.jpg) bottom repeat-x
 }
@@ -220,6 +220,13 @@ em {
 
 .col_220 {
 	width: 300px;
+}
+
+.top_400 {
+	height: 400px;
+}
+.top_100{
+	height: 90px;
 }
 
 .service_list {
