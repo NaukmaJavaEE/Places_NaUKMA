@@ -58,8 +58,8 @@ INSERT INTO `places` (`type`, `name`, `building`, `stage`, `aud`, `info`, `statu
 
 ('administration', 'Студентський відділ кадрів', 1, 1, 110, null , 'APPROVED' ),
 ('administration', 'Відділ по роботі зі студентами', 4, 1, 112, null , 'APPROVED' ),
-('administration', 'Планово-фінансовий відділ', 1, 3, 302, null , 'APPROVED' ),
-('administration', 'Служба президента НаУКМА', 1, 3, 302, null , 'APPROVED' ),
+('administration', 'Планово-фінансовий відділ', 1, 2, 218, null , 'APPROVED' ),
+('administration', 'Служба президента НаУКМА', 4, 3, 302, null , 'APPROVED' ),
 ('administration', 'Навчально-методичний відділ', 1, 2, 214, null , 'APPROVED' ),
 
 ('departments', 'Відділ міжнародного співробітництва', 5, 304, null, 'тел. 425-50-16' , 'APPROVED' ),
