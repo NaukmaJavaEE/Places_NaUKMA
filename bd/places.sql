@@ -112,13 +112,13 @@ INSERT INTO `places` (`type`, `name`, `building`, `stage`, `aud`, `info`, `statu
 
 >>>>>>> Stashed changes
 
-('departments', 'Відділ міжнародного співробітництва', 5, 304, null, 'тел. 425-50-16' , 'APPROVED' ),
+('departments', 'Відділ міжнародного співробітництва', 5, 3, 304, 'тел. 425-50-16' , 'APPROVED' ),
 ('departments', 'Служба залучення коштів', 5, null, null, 'тел. 425-15-43' , 'APPROVED' ),
 ('departments', 'Служба зв`язків з громадськістю ', 5, null, null, 'тел. 417-82-15' , 'APPROVED' ),
 ('departments', 'Приймальна комісія', 4, null, null, 'тел. 417-51-55, 425-60-22' , 'APPROVED' ),
-('departments', 'Відділ докторантури та аспірантури', 4, null, null, 'тел. 463-69-74' , 'APPROVED' ),
+('departments', 'Відділ докторантури та аспірантури', 8, 1, 2, 'тел. 463-69-74' , 'APPROVED' ),
 ('departments', 'Центр кар`єри та працевлаштування студентів', 4, 1, 115, 'тел. 462-51-95, http://jcc.ukma.edu.ua' , 'APPROVED' ),
-('departments', 'Редакційно-видавничий відділ', 3, 1, '115, 120, 311', 'тел. 425-45-44' , 'APPROVED' ),
+('departments', 'Редакційно-видавничий відділ', 3, 1, 311, 'тел. 425-45-44' , 'APPROVED' ),
 ('departments', 'Інформаційно-обчислювальний центр', 1, 2, 215, 'тел. 425-53-00' , 'APPROVED' ),
 ('departments', 'Правнича клініка', 9, 2, 15, null , 'APPROVED' ),
 ('departments', 'Центр урбаністичних студій', 4, -1,null ,'www.facebook.com/urbanstudieskma' , 'APPROVED' ),

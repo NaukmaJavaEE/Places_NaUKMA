@@ -80,6 +80,12 @@
                             <spring:message code="label.administration"/>
                         </h2>
                         <div class=" list float_i"></div>
+                        <div class="gallery">
+                            <br/>
+                            <a href="resources/images/gallery/admin.png" rel="lightgallery">
+                                <img src="resources/images/gallery/admin.png" style="height: 100px; width: 170px"
+                                     alt=""/></a>
+                        </div>
                     </div>
                     <!-- end administration -->
                     <div class="panel" id="departments" align="center">
