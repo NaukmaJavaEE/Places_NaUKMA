@@ -37,11 +37,11 @@
 }
 #LG_prevLink{
     left:0;
-    background:url('prev.gif') no-repeat left 40px
+    background:url('prevpic.png;') no-repeat left 40px
 }
 #LG_nextLink{
     right:0;
-    background:url('next.gif') no-repeat right 40px
+    background:url('nextpic.png') no-repeat right 40px
 }
 
 #LG_imgIndex{
