@@ -92,6 +92,13 @@
     position: absolute;
 }
 
+.scrollContainer div.adminpanel {
+    width: 745px;
+    height: 530px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
 ul.navigation {
     list-style: none;
     margin: 0 12px 0 0;

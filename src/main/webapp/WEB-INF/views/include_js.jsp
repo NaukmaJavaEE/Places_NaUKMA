@@ -99,7 +99,7 @@
 			$('#schools .float_i').html(formTHSchools());
 			get('/places/schools', function(response) {
 				for (var i = 0; i < response.length; ++i) {
-					$('#list-schools').append(formTBLibrary(response[i]));
+					$('#list-schools').append(formTBDean(response[i]));
 				}
 			}, function(xhr) {
 				console.log(xhr);

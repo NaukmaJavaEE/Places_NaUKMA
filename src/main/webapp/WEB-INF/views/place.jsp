@@ -95,6 +95,15 @@
                             <spring:message code="label.departments"/>
                         </h2>
                         <div class="list float_i"></div>
+                        <div class="gallery">
+                            <br/>
+                            <a href="resources/images/gallery/depart1pl.png" rel="lightgallery[chair]">
+                                <img src="resources/images/gallery/depart1pl.png"
+                                     style="height: 100px; width: 170px" alt=""/></a>
+                            <a href="resources/images/gallery/depart2pl.png" rel="lightgallery[chair]">
+                                <img src="resources/images/gallery/depart2pl.png"
+                                     style="height: 100px; width: 170px" alt=""/></a>
+                        </div>
                     </div>
                     <!-- end departments -->
                     <div class="panel" id="library" align="center">

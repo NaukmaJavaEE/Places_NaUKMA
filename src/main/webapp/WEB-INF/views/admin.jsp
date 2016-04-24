@@ -46,21 +46,21 @@
             <div class="scroll">
                 <div class="scrollContainer">
 
-                    <div class="panel" id="newplaces" align="center">
+                    <div class="adminpanel" id="newplaces" align="center">
                         <h2>
                             <spring:message code="label.newplaces"/>
                         </h2>
                         <div class="float_i"></div>
                     </div>
                     <!-- end  -->
-                    <div class="panel" id="allplaces" align="center">
+                    <div class="adminpanel" id="allplaces" align="center">
                         <h2>
                             <spring:message code="label.allplaces"/>
                         </h2>
                         <div class="float_i"></div>
                     </div>
 
-                    <div class="panel" id="add" align="center">
+                    <div class="adminpanel" id="add" align="center">
                         <h2>
                             <spring:message code="label.add"/>
                         </h2>
