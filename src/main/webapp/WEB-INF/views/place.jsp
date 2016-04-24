@@ -68,10 +68,12 @@
                         <div class="list float_i"></div>
                         <div class="gallery">
                             <br/>
-                            <a href="resources/images/gallery/image_01.jpg" rel="lightgallery">
-                                <img src="resources/images/gallery/image_01.jpg" alt=""/></a>
-                            <a href="resources/images/gallery/image_01.jpg" rel="lightgallery">
-                                <img src="resources/images/gallery/image_01.jpg" alt=""/></a>
+                            <a href="resources/images/gallery/chair1pl.png" rel="lightgallery[chair]">
+                                <img src="resources/images/gallery/chair1pl.png"
+                                     style="height: 100px; width: 170px" alt=""/></a>
+                            <a href="resources/images/gallery/chair2pl.png" rel="lightgallery[chair]">
+                                <img src="resources/images/gallery/chair2pl.png"
+                                     style="height: 100px; width: 170px" alt=""/></a>
                         </div>
                     </div>
                     <!-- end chair -->

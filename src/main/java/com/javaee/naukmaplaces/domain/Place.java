@@ -30,7 +30,7 @@ public class Place {
 	private Integer stage;
 
 	@Column(name = "AUD")
-	private Integer aud;
+	private String aud;
 
 	@Column(name = "INFO")
 	private String info;
@@ -79,11 +79,11 @@ public class Place {
 		this.stage = stage;
 	}
 
-	public Integer getAud() {
+	public String getAud() {
 		return aud;
 	}
 
-	public void setAud(Integer aud) {
+	public void setAud(String aud) {
 		this.aud = aud;
 	}
 
