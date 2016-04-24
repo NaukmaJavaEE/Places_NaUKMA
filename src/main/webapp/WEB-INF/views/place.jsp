@@ -97,10 +97,10 @@
                         <div class="list float_i"></div>
                         <div class="gallery">
                             <br/>
-                            <a href="resources/images/gallery/depart1pl.png" rel="lightgallery[chair]">
+                            <a href="resources/images/gallery/depart1pl.png" rel="lightgallery[depart]">
                                 <img src="resources/images/gallery/depart1pl.png"
                                      style="height: 100px; width: 170px" alt=""/></a>
-                            <a href="resources/images/gallery/depart2pl.png" rel="lightgallery[chair]">
+                            <a href="resources/images/gallery/depart2pl.png" rel="lightgallery[depart]">
                                 <img src="resources/images/gallery/depart2pl.png"
                                      style="height: 100px; width: 170px" alt=""/></a>
                         </div>
